@@ -1,0 +1,78 @@
+/* Parent container to center the tracker */
+.progress-tracker-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  margin-top: 10%;
+}
+
+/* Styled card */
+.progress-tracker {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  border: 2px solid #90a4ae;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  width: 100%;
+  max-width: 600px; /* Medium width */
+}
+
+.progress-tracker h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #37474f;
+}
+
+.progress-tracker ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-tracker li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.progress-tracker li:hover {
+  background-color: #e8f0fe;
+}
+
+/* Badge styles for statuses */
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.approved {
+  background-color: #c8e6c9;
+  color: #256029;
+}
+
+.status.pending {
+  background-color: #ffe0b2;
+  color: #bf360c;
+}
+
+.status.scheduled {
+  background-color: #bbdefb;
+  color: #0d47a1;
+}
+
+.status.not-scheduled {
+  background-color: #ef9a9a;
+  color: #b71c1c;
+}

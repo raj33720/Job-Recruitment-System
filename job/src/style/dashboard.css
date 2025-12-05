@@ -1,0 +1,76 @@
+/* Styles for overall dashboard container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column; /* Keeps header on top */
+    min-height: 100vh; /* Ensures full-page height */
+  }
+  
+  /* Styles for sidebar & main content */
+  .dashboard-content {
+    display: flex; /* ✅ Makes Sidebar & Content side by side */
+    flex: 1;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 300px; /* Fixed width for sidebar */
+    background: #7CB0EA;
+    padding: 35px;
+    min-height: 100vh; /* Sidebar takes full height */
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex-grow: 1; /* ✅ Takes remaining space */
+    padding: 20px;
+    background-color: #b0bec5;
+  }
+  
+  /* Heading inside the main content */
+  .main-content h1 {
+    margin-bottom: 20px;
+    
+  }
+  /* Instruction box container */
+.instruction-box {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+  color: #333;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Heading style */
+.instruction-box h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+/* Styled list for the steps */
+.instruction-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.instruction-list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.instruction-list li::before {
+  content: counter(step) ".";
+  counter-increment: step;
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.instruction-list {
+  counter-reset: step;
+}

@@ -1,0 +1,86 @@
+/* personaldetails.css */
+body{
+ 
+  display: grid;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top:5%;
+  left: 35%;
+  width: 35%;
+  margin: auto;
+
+  background: #f9f9f9;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: x-large;
+  text-align: center;
+  color: blueviolet;
+}
+
+form {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Gender radio buttons in one line */
+.gender-options {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between options */
+}
+
+/* Buttons in the same line */
+.button-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px; /* Space between buttons */
+}
+
+button {
+  flex: 1; /* Make buttons take equal width */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+ 
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #6a0dad; /* Purple */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1177DE;
+    padding: 30px 30px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    height: 50px;
+  }
+  
+  .header-logo {
+    height: 80px;
+    width: 180px; /* ✅ Adjust logo size as needed */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-btn {
+    background-color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgb(165, 149, 149);
+  }
+  .profile-btn:hover{
+    background-color: greenyellow;
+    color: white;
+  }

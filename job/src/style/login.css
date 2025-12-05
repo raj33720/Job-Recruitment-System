@@ -1,0 +1,100 @@
+.login-wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f2f6fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    margin-top: 10%;
+  }
+  
+  .login-form {
+    width: 100%;
+    padding-top: 40px;
+  }
+  
+  .login-form h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .input-box i {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: #888;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .remember-forgot[type="check-box"]{
+    margin:20px;
+  }
+  .remember-forgot a {
+    color: #2196f3;
+    text-decoration: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #43a047;
+  }
+  
+  .register-link {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .register-link a {
+    color: #2196f3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url("D:\Angular js\project\job\public\images\bg.png"); /* Update path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    font-family: sans-serif; /* Optional for better look */
+    height: 100vh;
+
+  }
+  
+  

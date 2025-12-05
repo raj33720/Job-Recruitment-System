@@ -1,0 +1,27 @@
+.hr-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8adcff;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: aliceblue;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
