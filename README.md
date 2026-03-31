@@ -129,7 +129,7 @@ JWT_SECRET=your_secret_key
 ### 5️⃣ Run Backend Server
 
 ```
-node server.js
+npm start
 ```
 
 ---
