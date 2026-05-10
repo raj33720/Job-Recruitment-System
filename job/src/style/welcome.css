@@ -1,0 +1,353 @@
+.welcome-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 48px 24px;
+  background-color: #f8fafc;
+  background-image: url("/images/bg.png");
+  background-size: cover;
+  background-position: center;
+  color: #0f172a;
+  font-family: Arial, Helvetica, Calibri, sans-serif;
+}
+
+.welcome-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.78) 48%, rgba(30, 64, 175, 0.22) 100%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.08), rgba(255, 255, 255, 0.18));
+}
+
+.welcome-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(30, 64, 175, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(30, 64, 175, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.55;
+}
+
+.welcome-accent {
+  position: absolute;
+  z-index: 1;
+  border-radius: 8px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+}
+
+.accent-red {
+  right: 8%;
+  top: 13%;
+  width: 88px;
+  height: 88px;
+  transform: rotate(12deg);
+  background: #ef4444;
+}
+
+.accent-yellow {
+  left: 7%;
+  bottom: 12%;
+  width: 126px;
+  height: 20px;
+  background: #fde047;
+}
+
+.welcome-shell {
+  position: relative;
+  z-index: 2;
+  width: min(1120px, 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.welcome-copy {
+  padding: 20px 0;
+}
+
+.portal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.68);
+  padding: 10px 14px;
+  color: #1e40af;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.portal-badge span {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: #ef4444;
+}
+
+.welcome-copy h1 {
+  max-width: 720px;
+  margin: 0;
+  color: #0f172a;
+  font-family: Garamond, Cambria, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 7vw, 6.2rem);
+  font-weight: 950;
+  line-height: 0.92;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.welcome-copy h1 span {
+  display: block;
+  color: #1e40af;
+}
+
+.welcome-copy p {
+  max-width: 620px;
+  margin: 24px 0 0;
+  color: #475569;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.welcome-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 520px;
+  margin-top: 34px;
+}
+
+.welcome-metrics div {
+  border-left: 5px solid #1e40af;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 14px 16px;
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.08);
+}
+
+.welcome-metrics div:nth-child(2) {
+  border-left-color: #fde047;
+}
+
+.welcome-metrics div:nth-child(3) {
+  border-left-color: #ef4444;
+}
+
+.welcome-metrics strong,
+.welcome-metrics small {
+  display: block;
+}
+
+.welcome-metrics strong {
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.welcome-metrics small {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.login-panel {
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 32px;
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.22);
+  backdrop-filter: blur(16px);
+}
+
+.panel-eyebrow {
+  margin: 0 0 8px;
+  color: #ef4444;
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.login-panel h2 {
+  margin: 0;
+  color: #0f172a;
+  font-family: Garamond, Cambria, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.panel-text {
+  margin: 14px 0 24px;
+  color: #64748b;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.welcome-button-group {
+  display: grid;
+  gap: 14px;
+}
+
+.login-choice {
+  width: 100%;
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 0;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.login-choice:hover {
+  transform: translateY(-3px);
+}
+
+.login-choice:focus-visible {
+  outline: 4px solid rgba(239, 68, 68, 0.24);
+  outline-offset: 3px;
+}
+
+.choice-mark {
+  width: 46px;
+  min-width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 950;
+}
+
+.login-choice strong,
+.login-choice small {
+  display: block;
+}
+
+.login-choice strong {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 950;
+}
+
+.login-choice small {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.welcome-hr-btn {
+  background: #1e40af;
+  box-shadow: 0 16px 34px rgba(30, 64, 175, 0.26);
+}
+
+.welcome-candidate-btn {
+  background: #ef4444;
+  box-shadow: 0 16px 34px rgba(239, 68, 68, 0.24);
+}
+
+.welcome-hr-btn:hover {
+  background: #172554;
+  box-shadow: 0 20px 42px rgba(30, 64, 175, 0.32);
+}
+
+.welcome-candidate-btn:hover {
+  background: #0f172a;
+  box-shadow: 0 20px 42px rgba(15, 23, 42, 0.25);
+}
+
+.panel-stripes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.panel-stripes span {
+  height: 10px;
+  border-radius: 8px;
+}
+
+.panel-stripes span:nth-child(1) {
+  background: #1e40af;
+}
+
+.panel-stripes span:nth-child(2) {
+  background: #fde047;
+}
+
+.panel-stripes span:nth-child(3) {
+  background: #ef4444;
+}
+
+@media (max-width: 900px) {
+  .welcome-container {
+    align-items: flex-start;
+    padding: 34px 18px;
+  }
+
+  .welcome-shell {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .welcome-copy {
+    padding-top: 10px;
+  }
+
+  .login-panel {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .welcome-container {
+    padding: 24px 14px;
+  }
+
+  .portal-badge {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+  }
+
+  .welcome-copy h1 {
+    font-size: 2.7rem;
+  }
+
+  .welcome-copy p {
+    font-size: 0.98rem;
+  }
+
+  .welcome-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .login-choice {
+    min-height: 88px;
+    align-items: flex-start;
+  }
+}

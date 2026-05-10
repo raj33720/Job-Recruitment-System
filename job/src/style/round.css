@@ -1,0 +1,59 @@
+.round-intro p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.65;
+}
+
+.round-intro ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.round-intro li {
+  color: #475569;
+}
+
+.round-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.round-test-card h2 {
+  margin: 0 0 8px;
+  color: #0f172a;
+}
+
+.round-test-card p {
+  margin: 0 0 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.round-test-card button {
+  min-height: 42px;
+  border: none;
+  border-radius: 11px;
+  padding: 10px 14px;
+  background: linear-gradient(140deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.round-test-card button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(30, 64, 175, 0.22);
+}
+
+@media (max-width: 860px) {
+  .round-actions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

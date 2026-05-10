@@ -1,0 +1,38 @@
+.schedule-exam-container {
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .schedule-exam-container h3 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .schedule-exam-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .schedule-exam-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .schedule-exam-container button {
+    margin-top: 15px;
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

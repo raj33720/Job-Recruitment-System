@@ -1,0 +1,45 @@
+.materials-intro {
+  margin: 0 0 14px;
+  color: #475569;
+  font-size: 0.96rem;
+}
+
+.category-box {
+  border: 1px solid rgba(30, 64, 175, 0.14);
+  border-radius: 14px;
+  padding: 14px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.category-box + .category-box {
+  margin-top: 12px;
+}
+
+.category-box h3 {
+  margin: 0 0 10px;
+  color: #1e3a8a;
+  font-size: 1rem;
+}
+
+.materials-list {
+  margin: 0;
+  padding-left: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.materials-list li {
+  color: #1e293b;
+}
+
+.materials-list a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.materials-list a:hover {
+  color: #dc2626;
+  text-decoration: underline;
+}
+
